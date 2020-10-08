@@ -1,0 +1,8 @@
+{
+  "arrowParens": "avoid",
+  "semi": true,
+  "tabWidth": 2,
+  "jsxSingleQuote": false,
+  "jsxBracketSameLine":false,
+  "embeddedLanguageFormatting": "auto"
+}
