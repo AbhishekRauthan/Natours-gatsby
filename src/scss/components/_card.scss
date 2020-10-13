@@ -1,10 +1,10 @@
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 50rem;
+  height: 52rem;
   position: relative;
   &__side {
-    height: 50rem;
+    height: 52rem;
     font-size: 2rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -30,19 +30,19 @@
         );
       }
 
-      &--2 {
+      &-2 {
         background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-primary-light,
+          $color-primary-dark
         );
       }
 
-      &--3 {
+      &-3 {
         background-image: linear-gradient(
           to right bottom,
-          $color-secondary-light,
-          $color-secondary-dark
+          $color-tertiary-light,
+          $color-tertiary-dark
         );
       }
     }
@@ -63,10 +63,13 @@
     position: absolute;
     top: 12rem;
     right: 2rem;
-    width: 69%;
+    width: 75%;
   }
 
   &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     &--1 {
       background-image: linear-gradient(
         to right bottom,
@@ -90,10 +93,61 @@
         url("../img/nat-5.jpg");
     }
     &--2 {
-      background-image: url("../img/nat-5.jpg");
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      ), url("../img/nat-6.jpg");
     }
     &--3 {
-      background-image: url("../img/nat-5.jpg");
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ), url("../img/nat-7.jpg");
     }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
   }
 }

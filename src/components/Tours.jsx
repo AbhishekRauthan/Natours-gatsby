@@ -1,4 +1,11 @@
 import React from 'react'
+import Card from './Card'
+
+const details = [
+  ["3 day tour", "upto 30 people", "2 tour guide", "Sleep in cozy hostel"],
+  ["7 day tour", "upto 40 people", "6 tour guide", "Sleep in provided tents"],
+  ["5 day tour", "upto 15 people", "3 tour guide", "Sleep in provided tents"],
+]
 
 const Tours = () => {
   return (
@@ -10,24 +17,13 @@ const Tours = () => {
       </div>
       <div className="row">
         <div className="col-1-of-3">
-          <div className="card">
-            <div className="card__side card__side--front">
-              <div className="card__pic card__pic--1">
-                &nbsp;
-              </div>
-              <h4 className="card__heading">
-                <span className="card__heading-span card__heading-span--1">
-                  The Sea Explorer
-                </span>
-              </h4>
-              <div className="card__details">
-                Details
-              </div>
-            </div>
-            <div className="card__side card__side--back card__side--back-1">
-              SOME TEXT IN BACK
-            </div>
-          </div>
+          <Card title="The Sea Explorer" price={297} details={details[0]} no={1} />
+        </div>
+        <div className="col-1-of-3">
+          <Card title="The Sea Explorer" price={597} details={details[1]} no={2} />
+        </div>
+        <div className="col-1-of-3">
+          <Card title="The Sea Explorer" price={897} details={details[2]} no={3} />
         </div>
       </div>
     </section>
