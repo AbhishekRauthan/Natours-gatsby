@@ -1,4 +1,5 @@
 import React from 'react'
+import Image1 from '../img/nat-8.jpg'
 
 const Stories = () => {
   return (
@@ -10,8 +11,9 @@ const Stories = () => {
       </div>
       <div className="row">
         <div className="story">
-          <figure className="story__shape">
-          
+          <figure className="story__shape"> 
+            <img src={Image1} alt="person on tour"  className="story__image"/>
+            <figcaption className="story__caption">Mary Smith</figcaption>
           </figure>
           <div className="story__text">
             <h3 className="heading-tertiary u-margin-bottom-small">
