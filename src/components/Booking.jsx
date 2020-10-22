@@ -30,7 +30,7 @@ const Booking = () => {
                   className="form__input"
                   id="email"
                 />
-                <label htmlFor="email" className="form__label">Name: </label>
+                <label htmlFor="email" className="form__label">Email: </label>
               </div>
             </form>
           </div>
