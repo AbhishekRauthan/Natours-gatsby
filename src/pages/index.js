@@ -1,4 +1,5 @@
 import React from 'react'
+import Booking from '../components/Booking';
 import Feature from '../components/Feature';
 import Header from '../components/Header'
 import Section from '../components/Section'
@@ -15,6 +16,7 @@ const Home = () => {
       <Feature />
       <Tours />
       <Stories />
+      <Booking />
     </div>
   )
 }
