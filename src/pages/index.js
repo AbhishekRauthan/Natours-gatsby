@@ -1,6 +1,7 @@
 import React from 'react'
 import Booking from '../components/Booking';
 import Feature from '../components/Feature';
+import Footer from '../components/Footer';
 import Header from '../components/Header'
 import Section from '../components/Section'
 import Stories from '../components/Stories';
@@ -11,12 +12,15 @@ import '../static/icon-fonts.css';
 const Home = () => {
   return (
     <div>
-      <Header />
-      <Section />
-      <Feature />
-      <Tours />
-      <Stories />
-      <Booking />
+      <main>
+        <Header />
+        <Section />
+        <Feature />
+        <Tours />
+        <Stories />
+        <Booking />
+      </main>
+      <Footer />
     </div>
   )
 }
