@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
 // Abstract
 @import "abstract/functions";
 @import "abstract/mixins";
@@ -22,6 +24,7 @@
 @import "layout/footer";
 @import "layout/header";
 @import "layout/grid";
+@import "layout/navigation";
 
 // pages
 @import "pages/home";

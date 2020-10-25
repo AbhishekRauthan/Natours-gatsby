@@ -3,6 +3,7 @@ import Booking from '../components/Booking';
 import Feature from '../components/Feature';
 import Footer from '../components/Footer';
 import Header from '../components/Header'
+import Navigation from '../components/Navigation';
 import Section from '../components/Section'
 import Stories from '../components/Stories';
 import Tours from '../components/Tours';
@@ -12,8 +13,9 @@ import '../static/icon-fonts.css';
 const Home = () => {
   return (
     <div>
+      <Navigation />
+      <Header />
       <main>
-        <Header />
         <Section />
         <Feature />
         <Tours />
