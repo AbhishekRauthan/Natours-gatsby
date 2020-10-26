@@ -4,13 +4,14 @@ import image2 from '../img/nat-9.jpg';
 
 const Popup = () => {
   return (
-    <div className="popup">
+    <div className="popup" id="popup">
       <div className="popup__content">
         <div className="popup__left">
           <img src={image1} alt="Tour Photo" className="popup__img" />
           <img src={image2} alt="Tour Photo" className="popup__img" />
         </div>
         <div className="popup__right">
+          <a href="#section-tours" className="popup__close">&times;</a>
           <h2 className="heading-secondary u-margin-bottom-small">Start Booking now</h2>
           <h3 className="heading-tertiary u-margin-bottom-small">
             Important &ndash; Please read these terms before Booking

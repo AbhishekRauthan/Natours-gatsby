@@ -29,7 +29,7 @@ const Card = ({ title, price, details, no }) => {
               Only
             </p>
             <p className="card__price-value">${price}</p>
-            <a href="" onClick={e => e.preventDefault()} className="btn btn--white">Book Now</a>
+            <a href="#popup" className="btn btn--white">Book Now</a>
           </div>
         </div>
       </div>

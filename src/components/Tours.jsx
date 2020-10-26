@@ -9,7 +9,7 @@ const details = [
 
 const Tours = () => {
   return (
-    <section className="section-tours">
+    <section className="section-tours" id="section-tours">
       <div className="u-margin-bottom-big u-center-text">
         <h2 className="heading-secondary">
           Most Popular Tours
