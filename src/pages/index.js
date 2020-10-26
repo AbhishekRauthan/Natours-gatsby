@@ -4,6 +4,7 @@ import Feature from '../components/Feature';
 import Footer from '../components/Footer';
 import Header from '../components/Header'
 import Navigation from '../components/Navigation';
+import Popup from '../components/Popup';
 import Section from '../components/Section'
 import Stories from '../components/Stories';
 import Tours from '../components/Tours';
@@ -23,6 +24,7 @@ const Home = () => {
         <Booking />
       </main>
       <Footer />
+      <Popup />
     </div>
   )
 }
